@@ -4,8 +4,21 @@ using namespace std;
 #include "src/CountWords.hpp"
 
 int main() {
-  CountWords counter;
-  counter.addWord("hello", 0);
-  counter.addWord("world", 1);
+  CountWords test;
+   string filename;
+
+  cout << "Enter the filename: ";
+  cin >> filename;
+
+  if (test.fileinside(filename)) {
+    cout << "File processed successfully." << endl;
+  } else {
+    cout << "Failed to open the file." << endl;
+  }
+
+  test.diskprint("output.txt");
   
+
+ 
+    return 0;
 }
