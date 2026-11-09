@@ -1,7 +1,11 @@
 #include <iostream>
+using namespace std;
 
-#include "src/factorial.hpp"
+#include "src/CountWords.hpp"
 
 int main() {
-  std::cout << "The factorial of 5 is " << factorial(5) << std::endl;
+  CountWords counter;
+  counter.addWord("hello", 0);
+  counter.addWord("world", 1);
+  
 }
