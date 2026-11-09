@@ -8,7 +8,7 @@
 TEST_CASE( "Benchmark 17 words" ) {
     CountWords words;
     BENCHMARK("17 words") {
-        words.fileinside("../tests/test1.txt");
+    words.fileinside("../tests/test1.txt");
     };
 }
 
@@ -22,32 +22,32 @@ TEST_CASE( "Benchmark 50 words" ) {
 TEST_CASE( "Benchmark 188 words" ) {
     CountWords words;
     BENCHMARK("188 words") {
-        words.fileinside("../tests/test3.txt");
+    words.fileinside("../tests/test3.txt");
     };
 }
 
 TEST_CASE( "Benchmark 465 words" ) {
     CountWords words;
     BENCHMARK("465 words") {
-        words.fileinside("../tests/test4.txt");
+    words.fileinside("../tests/test4.txt");
     };
 }
 
 TEST_CASE( "Benchmark 930 words" ) {
     CountWords words;
     BENCHMARK("930 words") {
-        words.fileinside("../tests/test5.txt");
+    words.fileinside("../tests/test5.txt");
     };
 }
 TEST_CASE( "Benchmark 9300 words" ) {
     CountWords words;
     BENCHMARK("9300 words") {
-        words.fileinside("../tests/test6.txt");
+    words.fileinside("../tests/test6.txt");
     };
 }
 TEST_CASE( "Benchmark 18600 words" ) {
     CountWords words;
     BENCHMARK("18600 words") {
-      return words.fileinside("../tests/test7.txt");
+    words.fileinside("../tests/test7.txt");
     };
 }
