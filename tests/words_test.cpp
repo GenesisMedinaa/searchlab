@@ -5,6 +5,49 @@
 
 #include "../src/CountWords.hpp"
 
-TEST_CASE( "it computes the factorial of different numbers" ) {
-    
+TEST_CASE( "Benchmark 17 words" ) {
+    CountWords words;
+    BENCHMARK("17 words") {
+        words.fileinside("test1.txt");
+    };
+}
+
+TEST_CASE( "Benchmark 50 words" ) {
+    CountWords words;
+    BENCHMARK("50 words") {
+    words.fileinside("test2.txt");
+    };
+}
+
+TEST_CASE( "Benchmark 188 words" ) {
+    CountWords words;
+    BENCHMARK("188 words") {
+        words.fileinside("test3.txt");
+    };
+}
+
+TEST_CASE( "Benchmark 465 words" ) {
+    CountWords words;
+    BENCHMARK("465 words") {
+        words.fileinside("test4.txt");
+    };
+}
+
+TEST_CASE( "Benchmark 930 words" ) {
+    CountWords words;
+    BENCHMARK("930 words") {
+        words.fileinside("test5.txt");
+    };
+}
+TEST_CASE( "Benchmark 9300 words" ) {
+    CountWords words;
+    BENCHMARK("9300 words") {
+        words.fileinside("test6.txt");
+    };
+}
+TEST_CASE( "Benchmark 18600 words" ) {
+    CountWords words;
+    BENCHMARK("18600 words") {
+        words.fileinside("test7.txt");
+    };
 }
